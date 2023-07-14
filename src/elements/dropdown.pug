@@ -1,0 +1,7 @@
+mixin dropdown(data)
+	.dropdown
+		.dropdown__wrapper
+			button.dropdown__button 
+				span= data.title
+				svg.icon--dropdown
+					use(xlink:href="#icon-maindrop")

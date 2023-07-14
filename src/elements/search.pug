@@ -1,0 +1,10 @@
+mixin search 
+	.search
+		.search__wrapper
+			.search__dropdown
+			+dropdown({ title: 'All categories' })
+			.search__separator
+			.search__box
+				input.search__box--field(type='text' placeholder='Search Products, categories ...')
+			.search__icon 
+				+icon('search', false)

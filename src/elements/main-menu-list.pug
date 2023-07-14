@@ -1,0 +1,17 @@
+mixin main-menu-list(data)
+	.main__menu-wrapper
+		button.main__menu-button
+			span= data.title
+			svg.icon--dropdown
+				use(xlink:href="#icon-maindrop")
+
+
+
+
+
+//- mixin main-menu-list(data)
+//- 	.main__menu-wrapper
+//- 		select.main__menu-list
+//- 				option= data.title
+//- 				each option in data.list
+//- 					option= option

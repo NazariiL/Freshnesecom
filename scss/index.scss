@@ -1,5 +1,13 @@
-body {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-}
+// * Base
+@import './normalize';
+// @import './media';
+@import './fonts';
+@import './variables';
+@import './base';
+@import './main';
+
+// * Elements
+@import './elements/index';
+
+// * Components
+@import './components/index';

@@ -1,0 +1,18 @@
+mixin menu(title, linkList)
+	.menu
+		.menu__wrapper
+			div.menu__title= title
+			ul.menu__list
+				each link in linkList
+					li.menu__item
+						a.menu__link(href=link.href)= link.text
+
+
+
+	//- 					mixin menu(title, linkList)
+	//- .menu
+	//- 	.menu__wrapper
+	//- 		h2.menu__title= title
+	//- 		each link in linkList
+	//- 			a.menu__link(href=link.href)= link.text
+

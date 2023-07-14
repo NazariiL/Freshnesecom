@@ -1,0 +1,43 @@
+
+//- -let largeGreen = 'button-large button-green'
+//- -let mediumGreen = 'button-medium button-green'
+//- -let smallGreen = 'button-small button-green'
+//- //
+//- -let largeBorder = 'button-large button-border'
+//- -let mediumBorder = 'button-medium button-border'
+//- -let smallBorder = 'button-small button-border'
+//- //
+//- -let largeGrey = 'button-large button-Grey'
+//- -let mediumGrey = 'button-medium button-Grey'
+//- -let smallGrey = 'button-small button-Grey'
+//- //
+//- -let largeTransparent = 'button-large button-transparent'
+//- -let mediumTransparent = 'button-medium button-transparent'
+//- -let smallTransparent = 'button-small button-transparent'
+
+//- mixin button(modifier, buttonText)
+//- 	-let classes = `button ${modifier}`
+//- 	button(class=classes)
+//- 		span= buttonText
+
+
+mixin button(args={})
+	- const type = args.type || 'button'
+	- const title = args.title || 'Default button title'
+
+	- let classes = 'button '
+
+	- if (args.silverMode) classes += 'button--silver '
+	- if (args.whiteMode) classes += 'button--white '
+	- if (args.greenMode) classes += 'button--green '
+	- if (args.smallMode) classes += 'button--small '
+	- if (args.bigMode) classes += 'button--big '
+
+	button(type=type, class=classes)
+		if args.arrowLeft 
+			+icon('arrowleft')
+
+		span= title
+
+		if args.arrowRight 
+			+icon('arrow')

@@ -1,0 +1,11 @@
+.header__navigation {
+  &-list {
+    display: flex;
+    gap: 38px;
+    color: $c-main;
+  }
+
+  &-item {
+    cursor: pointer;
+  }
+}

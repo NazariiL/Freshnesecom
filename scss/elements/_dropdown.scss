@@ -1,0 +1,21 @@
+.dropdown {
+  &__button {
+    border: none;
+    font-family: $ff-poppins;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: transparent;
+    display: flex;
+    padding: 10px 24px 10px 16px;
+    line-height: 1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.icon-maindrop {
+  font-size: 32px;
+  width: 32px;
+  height: 32px;
+}

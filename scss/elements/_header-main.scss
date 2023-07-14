@@ -1,0 +1,43 @@
+.header__main {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &-logo {
+    display: flex;
+    align-items: center;
+    padding-right: 160px;
+  }
+
+  &-search {
+    padding-right: 225px;
+  }
+
+  &-account {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  &-link {
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  &-basket::before {
+    content: '4'; /* Змініть цифру на потрібну */
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #ff7047;
+    color: white;
+    text-align: center;
+    line-height: 16px;
+    font-size: 12px;
+    left: 25%;
+    top: 2px;
+    pointer-events: none;
+  }
+}

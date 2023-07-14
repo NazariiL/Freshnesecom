@@ -1,0 +1,8 @@
+mixin icon(name, withClass = true)
+	- const id = `#icon-${name}`;
+	if withClass
+		svg.icon
+			use(xlink:href=id)
+	else
+		svg.icon--account
+			use(xlink:href=id)

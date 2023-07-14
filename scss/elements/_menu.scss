@@ -1,0 +1,36 @@
+.menu {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-family: $ff-poppins;
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
+
+  &__link {
+    font-family: $ff-base;
+    font-weight: 400;
+    font-size: 15px;
+    padding-bottom: 10px;
+    color: $c-main;
+  }
+
+  &__button {
+    padding-top: 35px;
+  }
+
+  &__button--text {
+    width: 180px;
+    height: 48px;
+    border: none;
+    border-radius: 12px;
+    font-family: $ff-poppins;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+  }
+}

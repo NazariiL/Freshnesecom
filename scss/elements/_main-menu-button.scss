@@ -1,0 +1,24 @@
+.main__menu {
+  &-button {
+    border: none;
+    background-color: $c-soft-grey;
+    display: flex;
+    line-height: 1;
+    cursor: pointer;
+    font-size: 15px;
+  }
+}
+
+// .main__menu-wrapper::after {
+//   content: '>';
+//   position: absolute;
+//   width: 16px;
+//   height: 16px;
+//   display: block;
+//   top: 30%;
+//   right: -1px;
+//   font-weight: 900;
+//   color: $c-main;
+//   transform: rotate(90deg);
+//   pointer-events: none;
+// }

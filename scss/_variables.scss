@@ -1,0 +1,26 @@
+:root {
+  // Colors
+  --c-white: #fff;
+  --c-green: #92c064;
+  --c-green-2: #6a983c;
+  --c-green-3: #46760a;
+  --c-black: #151515;
+  --c-silver: #f5f5f5;
+  // Transitions
+  --t-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+$c-silver: #f5f5f5;
+
+// ! Variables
+$c-white: #ffffff;
+$c-black: #000000;
+$c-main: #6a983c; // green
+$c-borders: #46760a; // dark green
+$c-main-grey: #f5f5f5; // grey
+$c-discount: #a9a9a9; // dark grey
+$c-soft-grey: #f9f9f9; // light grey
+
+// * Fonts
+$ff-base: 'Open Sans', sans-serif;
+$ff-poppins: 'Poppins', sans-serif;

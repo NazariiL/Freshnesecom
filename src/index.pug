@@ -1,7 +1,25 @@
 include components/index
+include elements/index
 
 doctype html
-html
-	head 
-	body 
-		+header 
+html(lang="en")
+
+	+head
+	body
+		include ./assets/symbol-defs.svg
+		+header
+		+main
+
+
+
+
+		+button()
+		+button({ title: 'My button title' })
+		+button({ title: 'My button title', greenMode: true })
+		+button({ title: 'My button title', silverMode: true, arrowLeft: true })
+		+button({ title: 'My button title', whiteMode: true })
+		+button({ title: 'My button title', whiteMode: true })
+		+button({ title: 'My button title', bigMode: true })
+		+button({ title: 'My button title', smallMode: true, greenMode: true, arrowRight: true })
+		+button({ title: 'My button title', smallMode: true, greenMode: true, arrowLeft: true })
+		+icon('arrow', true)
